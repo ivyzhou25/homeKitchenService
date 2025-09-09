@@ -83,13 +83,31 @@
 		</dependency>
 	</dependencies>
 
-	<build>
+	<!-- <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+	</build> -->
+	<build>
+		<sourceDirectory>backend/src/main/java</sourceDirectory>
+		<resources>
+			<resource>
+			<directory>backend/src/main/resources</directory>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+			<configuration>
+				<mainClass>com.homekitchen.api.HomeKitchenAPIApplication</mainClass>
+			</configuration>
+			</plugin>
+		</plugins>
 	</build>
+
 
 </project>

@@ -1,0 +1,11 @@
+/target/
+node_modules/
+dist/
+build/
+*.log
+.vscode/
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
